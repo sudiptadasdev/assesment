@@ -1,5 +1,4 @@
 package kai.cyber.assesment.model;
-import java.util.Map;
 
 public class Summary {
 
@@ -12,10 +11,10 @@ public class Summary {
     }
 
     public int total_vulnerabilities;
-        public SeverityCounts severity_counts;
-        public int fixable_count;
-        public boolean compliant;
-    }
+    public SeverityCounts severity_counts;
+    public int fixable_count;
+    public boolean compliant;
+}
 
 
 

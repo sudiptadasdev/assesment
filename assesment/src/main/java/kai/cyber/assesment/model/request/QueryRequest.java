@@ -1,9 +1,10 @@
 package kai.cyber.assesment.model.request;
 
-import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Input model class for /query api
+ */
 
 public class QueryRequest {
     @JsonProperty("filters")

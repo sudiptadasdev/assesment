@@ -2,7 +2,7 @@ package kai.cyber.assesment.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SeverityCounts{
+public class SeverityCounts {
     @JsonProperty("CRITICAL")
     public int critical;
     @JsonProperty("HIGH")

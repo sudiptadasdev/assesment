@@ -2,8 +2,8 @@ package kai.cyber.assesment.model;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-public class ScanResults{
+
+public class ScanResults {
     public String scan_id;
     public Date timestamp;
 

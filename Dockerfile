@@ -1,4 +1,3 @@
-
 FROM maven:latest AS build
 WORKDIR /app
 
@@ -6,7 +5,7 @@ COPY assesment/pom.xml ./
 
 COPY assesment/src ./src/
 
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 FROM openjdk:21
 

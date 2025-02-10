@@ -2,6 +2,9 @@ package kai.cyber.assesment.model.request;
 
 import java.util.List;
 
+/**
+ * Input model class for /scan api
+ */
 
 public class ScanRequest {
 

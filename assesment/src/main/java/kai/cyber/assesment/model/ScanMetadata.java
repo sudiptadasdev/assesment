@@ -3,8 +3,7 @@ package kai.cyber.assesment.model;
 import java.util.ArrayList;
 
 
-
-public class ScanMetadata{
+public class ScanMetadata {
     public String scanner_version;
 
     public String getScanner_version() {
