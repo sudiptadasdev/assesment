@@ -19,7 +19,7 @@ We can test using postman
 
 # 1. Import these curl commands in postman and test /scan endpoint
 
-## A. Curl command for positive response
+## A. Curl command to download and process files
 
 ```
 curl --location 'http://localhost:8080/api/scan' \
@@ -30,7 +30,7 @@ curl --location 'http://localhost:8080/api/scan' \
 }'
 ```
 
-##  B. Curl Command to Check Failure to connect GitHub
+##  B. Curl Command to test failure to connect GitHub
 ```
 curl --location 'http://localhost:8080/api/scan' \
 --header 'Content-Type: application/json' \
@@ -42,7 +42,7 @@ curl --location 'http://localhost:8080/api/scan' \
 
 # 2. Import these curl command to test /query endpoint
 
-## A. curl command to get matching vulnerabilities
+## A. curl command to get vulnerabilities based on filters
 ```
 curl --location 'http://localhost:8080/api/query' \
 --header 'Content-Type: application/json' \
@@ -54,7 +54,7 @@ curl --location 'http://localhost:8080/api/query' \
 '
 ```
 
-## B. curl command to test error scenario
+## B. curl command to test error scenario, testing with a severity value which is not present in the database
 
 ```
 curl --location 'http://localhost:8080/api/query' \
