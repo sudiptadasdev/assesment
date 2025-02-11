@@ -9,7 +9,7 @@ Prerequisite: docker should be installed in the system.
 
 2. Start docker in the system
 
-3. Using Command line, navigate to the assesment(root) directory of the project. Inside this directory I have placed the Dockerfile.
+3. Using Command line, navigate to the root directory of the project. Inside the root directory I have placed the Dockerfile.
 
 4. Use this command to build the image : `docker build -t my-spring-boot-app .`
 
