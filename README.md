@@ -17,30 +17,33 @@ Prerequisite: docker should be installed in the system.
 
 We can test using postman
 
-# 1. Import these curl command in postman and test /scan endpoint
+# 1. Import these curl commands in postman and test /scan endpoint
 
 ## A. Curl command for positive response
 
+```
 curl --location 'http://localhost:8080/api/scan' \
 --header 'Content-Type: application/json' \
 --data '{
   "repo": "https://raw.githubusercontent.com/velancio/vulnerability_scans",
   "files": ["vulnscan15.json","vulnscan1213.json"]
 }'
+```
 
 ##  B. Curl Command to Check Failure to connect GitHub
-
+```
 curl --location 'http://localhost:8080/api/scan' \
 --header 'Content-Type: application/json' \
 --data '{
   "repo": "https://raw.githubusercontent.com/velancio",
   "files": ["vulnscan15.json","vulnscan1213.json"]
 }'
+```
 
 # 2. Import these curl command to test /query endpoint
 
 ## A. curl command to get matching vulnerabilities
-
+```
 curl --location 'http://localhost:8080/api/query' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -49,8 +52,9 @@ curl --location 'http://localhost:8080/api/query' \
     }
 }
 '
+```
 
-## B.curl command to test error scenario
+## B. curl command to test error scenario
 
 ```
 curl --location 'http://localhost:8080/api/query' \
