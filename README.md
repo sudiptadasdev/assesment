@@ -69,7 +69,7 @@ curl --location 'http://localhost:8080/api/query' \
 
 
 We can also pull the code into IDE( I used Intellij). Then run these maven commands to build the package. 
-As a prerequisite we should have maven installed and the Maven Home path should be set to Ide's Build Tools. 
+As a prerequisite we should have maven and JAVA 21 SDK installed. Maven Home path should be set to Ide's Build Tools. 
 Maven Commands: 
 `mvn clean` 
 `mvn install` 
