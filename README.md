@@ -26,7 +26,7 @@ curl --location 'http://localhost:8080/api/scan' \
 --header 'Content-Type: application/json' \
 --data '{
   "repo": "https://raw.githubusercontent.com/velancio/vulnerability_scans",
-  "files": ["vulnscan15.json","vulnscan1213.json"]
+  "files": ["vulnscan15.json"]
 }'
 ```
 
@@ -83,7 +83,7 @@ Once the application is started we can test using the previously mentioned curl 
 
 
 Please note, while processing multiple files using concurrent threads, sometimes I am facing Database lock error in Sqlite, which I understand is common in Sqlite, as it is not
-optimized for multiple concurrent save operations.
+optimized for multiple concurrent save operations.In that case, we can try again to hit the endpoint /scan after sometime with multiple files.
 
 
 
